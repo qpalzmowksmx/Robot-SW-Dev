@@ -50,10 +50,10 @@ def main():
 
     # 자유도 계산
     dof = calculate_dof(num_links, num_joints, joint_dofs, dim)
-    print(f"\n👉 계산된 자유도(DOF)는 {dof}입니다.")
+    print(f"\n 계산된 자유도(DOF)는 {dof}입니다.")
 
     # 링크 길이 입력
-    print("\n📏 각 링크의 길이를 입력하세요 (단위: m):")
+    print("\n 각 링크의 길이를 입력하세요 (단위: m):")
     link_lengths = list(map(float, input().split()))
     if len(link_lengths) != num_links:
         print("!!! ALERT 링크 수와 입력 길이 수가 일치하지 않습니다 !!!")
