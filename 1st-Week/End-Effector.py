@@ -14,8 +14,8 @@
 # 📏 각 링크의 길이를 입력하세요 (단위: m):
 # 1 1 1 1 1 1 1 
 
-# 🛰️ 최대 도달 거리 (팔을 최대한 펼쳤을 때): 7.00 m
-# 🧭 구형 작업 공간 부피 (이론상 최대): 1436.76 m³
+#  최대 도달 거리 (팔을 최대한 펼쳤을 때): 7.00 m
+#  구형 작업 공간 부피 (이론상 최대): 1436.76 m³
 
 import math
 
@@ -63,8 +63,8 @@ def main():
     max_reach = calculate_max_reach(link_lengths)
     workspace_volume = calculate_workspace_volume(max_reach)
 
-    print(f"\n🛰️ 최대 도달 거리 (팔을 최대한 펼쳤을 때): {max_reach:.2f} m")
-    print(f"🧭 구형 작업 공간 부피 (이론상 최대): {workspace_volume:.2f} m³")
+    print(f"\n 최대 도달 거리 (팔을 최대한 펼쳤을 때): {max_reach:.2f} m")
+    print(f" 구형 작업 공간 부피 (이론상 최대): {workspace_volume:.2f} m³")
 
 if __name__ == "__main__":
     main()
