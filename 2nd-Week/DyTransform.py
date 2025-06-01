@@ -18,7 +18,7 @@ def dh_matrix(theta, d, a, alpha):
     ])
 
 def main():
-    print("*** DH 파라미터 기반 변환 행렬 계산기 ***")
+    print("! DH 파라미터 기반 변환 행렬 계산기 !")
 
     try:
         n = int(input("몇 개의 관절(DH 파라미터 셋)을 입력하시겠습니까? : "))
@@ -45,7 +45,7 @@ def main():
         return dh_params
 
     except Exception as e:
-        print(f"입력 중 오류 발생: {e}")
+        print(f"!!! A L E R T !!!입력 중 오류 발생!!!: {e}")
 
 if __name__ == "__main__":
     main()
