@@ -1,0 +1,29 @@
+Column Name	설명
+time	시간 (초)
+gps_x, gps_y	GPS 측정 위치 (x, y 좌표)
+imu_acceleration_x, imu_acceleration_y	IMU 가속도 측정값 (x, y 축)
+absolute_x, absolute_y	절대 위치 (정답 혹은 지면 기준의 실제 위치)
+
+
+1   1.py            -csv에서 불러오기
+2-  DefineClass.py  -kalmanfilter알고리즘 구현을 위한 클래스 정의
+3-  KalmanFilter.py -kalmanfilter 적용
+4-  visula.py       -시각화
+
+
+1. 개요Kalman Filter를 활용한 GPS와 IMU 데이터 융합을 통해 더 정확하고 신뢰할 수 있는 위치 추정을 수행하였습니다. 
+    특히, IMU의 고속 측정과 GPS의 낮은 노이즈 특성을 보완하여 시스템의 전체적인 성능을 향상시켰습니다.
+
+2. 데이터 처리CSV 파일 로드: IMU_GPS_sensor_data.csv에서 센서 데이터를 불러왔습니다.
+    데이터 구성: 시간, GPS 위치, IMU 가속도, 절대 위치 등이 포함되어 있습니다.
+    
+3. Kalman Filter 구현클래스 정의: KalmanFilter 클래스를 정의하여 상태 예측과 측정 업데이트 기능을 구현하였습니다.
+    파라미터 설정: 프로세스 노이즈와 측정 노이즈를 적절히 설정하였습니다.
+    
+4. 결과 시각화그래프 생성: 실제 위치, GPS 측정값, Kalman Filter 추정치를 비교하여 차트를 그렸습니다.
+    해석: Kalman Filter가 IMU와 GPS 데이터의 장점을 극대화시켜 정확한 위치 추정을 달성함을 확인할 수 있었습니다.
+
+결론 요약
+Kalman Filter를 활용한 GPS와 IMU 데이터 융합은 다양한 센서 데이터를 효과적으로 통합하고, 각 센서의 특성을 보완하여 더욱 신뢰성 높고 정확한 위치 추정을 가능하게 하였습니다.
+
+이러한 결과는 2-Link 로봇에서의 자코비안 계산과 시뮬레이션, 특이점 탐색 등 다른 과제와 연계되어 더 복잡한 제어 문제 해결에 활용될 수 있습니다. 특히, 로봇이 동작하는 환경에서 발생할 수 있는 노이즈나 불확실성을 효과적으로 관리함으로써 시스템의 안정성과 효율성을 크게 향상시킬 수 있습니다.
